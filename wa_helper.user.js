@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WA Helper
 // @namespace    https://github.com/Chen188/wellarchitected-helper
-// @version      0.1
+// @version      0.2
 // @updateURL    https://raw.githubusercontent.com/Chen188/wellarchitected-helper/main/version.txt
 // @downloadURL  https://raw.githubusercontent.com/Chen188/wellarchitected-helper/main/wa_helper.user.js
 // @description  Skip pillars not used in a specific workload automatically, save time and enjoy your life!
