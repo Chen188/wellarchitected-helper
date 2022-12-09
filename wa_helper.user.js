@@ -6,7 +6,7 @@
 // @downloadURL  https://raw.githubusercontent.com/Chen188/wellarchitected-helper/main/wa_helper.user.js
 // @description  Skip pillars not used in a specific workload automatically, save time and enjoy your life!
 // @author       Chen188@github.com
-// @match        https://us-east-1.console.aws.amazon.com/wellarchitected*
+// @match        https://*.console.aws.amazon.com/wellarchitected*
 // @icon         https://www.google.com/s2/favicons?sz=64&domain=amazon.com
 // @grant        window.onurlchange
 // ==/UserScript==
