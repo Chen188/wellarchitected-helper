@@ -313,7 +313,7 @@ function taskDone() {
 }
 
 async function markNotApplicable(question){
-    question.querySelector('a').click();
+    question.querySelector('button').click();
     await sleep(2000); // wait question description dom appear
     document.querySelector('#notApplicable input[type="checkbox"]').click();
 
@@ -365,8 +365,11 @@ async function startTask($pillars) {
         // expend pillar
         $pillars[pillar_index].click();
 
+        // get parent question dom.
+        let question_dom_id = $pillars[pillar_index].parentElement.id.split('-trigger')[0]
+
         // process questions under this pillar
-        let questions=document.querySelectorAll('.wizard-sidebar-question');
+        let questions=document.querySelectorAll(`[id='${question_dom_id}'] .wizard-sidebar-question`)
 
         let question_idx = 0, question_processed = 0;
         for (; question_idx < questions.length; question_idx ++) {
